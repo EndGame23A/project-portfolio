@@ -11,10 +11,15 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:120vh;
+    height:100vh;
+}
+.content__container{
+    height:100vh;
+    overflow-y: scroll;
 }
 section{
     height:100vh;
+    overflow: hidden;
 }
 .header__nav__content{
     display: flex;
@@ -35,6 +40,8 @@ section{
     font-size: 20px;
     font-weight:400;
 }
+
+/* Home */
 .home__container{
     display: flex;
     text-align: center;
@@ -91,6 +98,40 @@ section{
 
 /* Works */
 .works__container{
-    background:url("assets/bg-1.jpg");
     height:inherit;
+    padding-top:6rem;
+}
+
+.works__content__container{
+    text-align: center;
+}
+.works__content__project__container{
+    height:100%;
+    width:100%;
+    display: flex;
+}
+.works__content__project__text__container, .works__content__project__img{
+    flex: 50%;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.works__content__project__title{
+    font-size:30px;
+    font-weight:300;
+    text-decoration: underline;
+}
+.works__content__project__description{
+    font-size:25px;
+}
+.works__content__project__img> img{
+    object-fit: cover;
+    width:100%;
+}
+.inline-text-link{
+    text-decoration: underline;
+    color:inherit;
+    cursor:pointer;
+}
+.inline-text-link:hover{
+    color:white;
 }
